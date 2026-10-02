@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio Jurídico Víctor Ratari & Asociados | Florencio Varela</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#14233c',
+                            900: '#0f1c2e',
+                            950: '#09111c',
+                        },
+                        gold: {
+                            400: '#e0b86a',
+                            500: '#c5a059',
+                            600: '#a3803c',
+                        }
+                    },
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        montserrat: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #0f1c2e;
+            color: #f4f4f6;
+        }
+        .font-serif-title {
+            font-family: 'Cinzel', serif;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #f3e5ab 0%, #c5a059 50%, #99782c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border {
+            border-color: #c5a059;
+        }
+        .hero-overlay {
+            background: linear-gradient(180deg, rgba(15,28,46,0.85) 0%, rgba(15,28,46,0.95) 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-navy-900 text-gray-100 antialiased selection:bg-gold-500 selection:text-navy-900">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="sticky top-0 z-50 bg-navy-950/95 backdrop-blur border-b border-gold-500/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full border-2 border-gold-500 flex items-center justify-center bg-navy-900 text-gold-500">
+                    <i class="fa-solid fa-scale-balanced text-xl"></i>
+                </div>
+                <div>
+                    <span class="font-serif-title text-lg sm:text-xl font-bold tracking-wider text-gold-500 block leading-tight">VÍCTOR RATARI</span>
+                    <span class="text-xs tracking-widest text-gray-300 uppercase block font-semibold">& ASOCIADOS • ESTUDIO JURÍDICO</span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#inicio" class="hover:text-gold-400 transition-colors">Inicio</a>
+                <a href="#especialidades" class="hover:text-gold-400 transition-colors">Especialidades</a>
+                <a href="#nosotros" class="hover:text-gold-400 transition-colors">El Estudio</a>
+                <a href="#turnos" class="bg-gold-500 hover:bg-gold-400 text-navy-950 px-5 py-2.5 rounded-md font-bold transition-all shadow-md hover:shadow-gold-500/20">
+                    <i class="fa-regular fa-calendar-check mr-2"></i>Turnos Online
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+                <a href="#turnos" class="bg-gold-500 text-navy-950 px-3 py-1.5 rounded text-xs font-bold uppercase tracking-wider">
+                    Turnos
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION WITH IMPOSING LADY JUSTICE -->
+    <section id="inicio" class="relative min-h-[85vh] flex items-center justify-center bg-navy-950 overflow-hidden">
+        <!-- Background Image with High-Visibility Lady Justice -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=2000&q=80" 
+                 alt="Estatua de la Justicia - Víctor Ratari y Asociados" 
+                 class="w-full h-full object-cover object-center opacity-40 filter brightness-110 contrast-125 scale-105 transform hover:scale-100 transition-transform duration-10000">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-4 py-16 text-center">
+            <!-- Badge -->
+            <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full border border-gold-500/40 bg-navy-900/80 backdrop-blur mb-6">
+                <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
+                <span class="text-xs font-semibold tracking-widest text-gold-400 uppercase">Atención Especializada en Florencio Varela</span>
+            </div>
+
+            <h1 class="font-serif-title text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-wide leading-tight mb-4 text-white">
+                ESTUDIO JURÍDICO <br>
+                <span class="gold-gradient-text">VÍCTOR RATARI & ASOCIADOS</span>
+            </h1>
+
+            <p class="text-gold-400 font-serif-title text-base sm:text-xl tracking-widest uppercase mb-6 font-semibold">
+                Soluciones Legales • Resultados Reales
+            </p>
+
+            <div class="max-w-3xl mx-auto bg-navy-900/60 backdrop-blur p-6 rounded-xl border border-gold-500/30 mb-8 card-shadow">
+                <p class="text-base sm:text-lg text-gray-200 font-medium leading-relaxed">
+                    "Su libertad, patrimonio y reputación están en nuestras manos. Brindamos un respaldo legal sólido, estratégico e implacable con máxima confidencialidad."
+                </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#turnos" class="w-full sm:w-auto bg-gold-500 hover:bg-gold-400 text-navy-950 font-bold px-8 py-4 rounded-lg shadow-lg hover:shadow-gold-500/30 transition-all text-base tracking-wide uppercase">
+                    <i class="fa-solid fa-calendar-days mr-2"></i> Reservar Turno de Consulta
+                </a>
+                <a href="https://wa.me/5491137985710" target="_blank" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-8 py-4 rounded-lg shadow-lg hover:shadow-emerald-600/30 transition-all text-base tracking-wide flex items-center justify-center">
+                    <i class="fa-brands fa-whatsapp text-xl mr-2"></i> WhatsApp Directo
+                </a>
+            </div>
+
+            <!-- Quick Contacts Row -->
+            <div class="mt-12 pt-8 border-t border-gray-800/80 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs sm:text-sm text-gray-300">
+                <div class="flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-location-dot text-gold-500 text-base"></i>
+                    <span>Bocuzzi 1222, Florencio Varela</span>
+                </div>
+                <div class="flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-phone text-gold-500 text-base"></i>
+                    <span>11 3798-5710 / 11 3165-5290</span>
+                </div>
+                <div class="flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-clock text-gold-500 text-base"></i>
+                    <span>Atención: Lunes a Viernes 10 a 16 hs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIALTIES SECTION -->
+    <section id="especialidades" class="py-20 bg-navy-900 border-t border-b border-navy-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-serif-title text-3xl sm:text-4xl font-bold text-white mb-3">
+                    ÁREAS DE <span class="gold-gradient-text">ESPECIALIDAD</span>
+                </h2>
+                <div class="w-24 h-1 bg-gold-500 mx-auto rounded-full mb-4"></div>
+                <p class="text-gray-300 text-sm sm:text-base">
+                    Cobertura jurídica integral adaptada a cada necesidad. Haga clic en cualquiera de nuestras áreas para reservar una consulta especializada.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- CARD 1: DERECHO PENAL Y CIBERDELITOS -->
+                <div class="bg-navy-950 rounded-xl overflow-hidden border border-gold-500/30 card-shadow flex flex-col hover:border-gold-500 transition-all group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9?auto=format&fit=crop&w=600&q=80" 
+                             alt="Derecho Penal y Ciberdelitos" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-transparent"></div>
+                        <span class="absolute top-3 left-3 bg-gold-500 text-navy-950 font-bold text-xs uppercase px-2.5 py-1 rounded shadow">
+                            Penal
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif-title text-lg font-bold text-white mb-3 group-hover:text-gold-400 transition-colors">
+                                Derecho Penal & Ciberdelitos
+                            </h3>
+                            <ul class="text-xs sm:text-sm text-gray-300 space-y-2 mb-6">
+                                <li class="flex items-start"><i class="fa-solid fa-circle-check text-gold-500 text-xs mt-1 mr-2"></i> Defensa en juicios orales</li>
+                                <li class="flex items-start"><i class="fa-solid fa-circle-check text-gold-500 text-xs mt-1 mr-2"></i> Recursos y apelaciones</li>
+                                <li class="flex items-start"><i class="fa-solid fa-circle-check text-gold-500 text-xs mt-1 mr-2"></i> Estafas virtuales y delitos informáticos</li>
+                                <li class="flex items-start"><i class="fa-solid fa-circle-check text-gold-500 text-xs mt-1 mr-2"></i> Excarcelaciones y querellas</li>
+                            </ul>
+                        </div>
+                        <button onclick="seleccionarYNavegar('Penal')" class="w-full bg-navy-900 hover:bg-gold-500 text-gold-400 hover:text-navy-950 font-bold py-2.5 px-4 rounded-lg border border-gold-500/40 hover:border-gold-500 transition-all text-xs uppercase tracking-wider flex items-center justify-center">
+                            <i class="fa-solid fa-calendar-plus mr-2"></i> Reservar Turno Penal
+                        </button>
+                    </div>
+                </div>
+
+                <!-- CARD 2: ACCIDENTES LABORALES Y ART -->
+                <div class="bg-navy-950 rounded-xl overflow-hidden border border-gold-500/30 card-shadow flex flex-col hover:border-gold-500 transition-all group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" 
+                             alt="Accidentes Laborales y ART" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-transparent"></div>
+                        <span class="absolute top-3 left-3 bg-gold-500 text-navy-950 font-bold text-xs uppercase px-2.5 py-1 rounded shadow">
+                            Laboral
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif-title text-lg font-bold text-white mb-3 group-hover:text-gold-400 transition-colors">
+                                Accidentes Laborales & ART
+                            </h3>
+                            <ul class="text-xs sm:text-sm text-gray-300 space-y-2 mb-6">
+                                <li class="flex items-start"><i class="fa-solid fa-circle-check text-gold-500 text-xs mt-1 mr-2"></i> Reclamos e indemnizaciones por ART</li>
+                                <li class="flex items-start"><i class="fa-solid fa-circle-check text-gold-500 text-xs mt-1 mr-2"></i> In itinere (trayecto al trabajo)</li>
+                                <li class="flex items-start"><i class="fa-solid fa-circle-check text-gold-500 text-xs mt-1 mr-2"></i> Enfermedades profesionales</li>
+                                <li class="flex items-start"><i class="fa-solid fa-circle-check text-gold-500 text-xs mt-1 mr-2"></i> Asistencia médica y trámites legales</li>
+                            </ul>
+                        </div>
+                        <button onclick="seleccionarYNavegar('Laboral')" class="w-full bg-navy-900 hover:bg-gold-500 text-gold-400 hover:text-navy-950 font-bold py-2.5 px-4 rounded-lg border border-gold-500/40 hover:border-gold-500 transition-all text-xs uppercase tracking-wider flex items-center justify-center">
+                            <i class="fa-solid fa-calendar-plus mr-2"></i> Reservar Turno Laboral
+                        </button>
+                    </div>
+                </div>
+
+                <!-- CARD 3: DERECHO DE FAMILIA -->
+                <div class="bg-navy-950 rounded-xl overflow-hidden border border-gold-500/30 card-shadow flex flex-col hover:border-gold-500 transition-all group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=600&q=80" 
+                             alt="Derecho de Familia" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-transparent"></div>
+                        <span class="absolute top-3 left-3 bg-gold-500 text-navy-950 font-bold text-xs uppercase px-2.5 py-1 rounded shadow">
+                            Familia
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif-title text-lg font-bold text-white mb-3 group-hover:text-gold-400 transition-colors">
+                                Derecho de Familia
+                            </h3>
+                            <ul class="text-xs sm:text-sm text-gray-300 space-y-2 mb-6">
+                                <li class="flex items-start"><i class="fa-solid fa-circle-check text-gold-500 text-xs mt-1 mr-2"></i> Cuota de alimentos</li>
+                                <li class="flex items-start"><i class="fa-solid fa-circle-check text-gold-500 text-xs mt-1 mr-2"></i> Divorcios express y unilaterales</li>
+                                <li class="flex items-start"><i class="fa-solid fa-circle-check text-gold-500 text-xs mt-1 mr-2"></i> Régimen de comunicación</li>
+                                <li class="flex items-start"><i class="fa-solid fa-circle-check text-gold-500 text-xs mt-1 mr-2"></i> Cuidado personal y guardas</li>
+                            </ul>
+                        </div>
+                        <button onclick="seleccionarYNavegar('Familia')" class="w-full bg-navy-900 hover:bg-gold-500 text-gold-400 hover:text-navy-950 font-bold py-2.5 px-4 rounded-lg border border-gold-500/40 hover:border-gold-500 transition-all text-xs uppercase tracking-wider flex items-center justify-center">
+                            <i class="fa-solid fa-calendar-plus mr-2"></i> Reservar Turno Familia
+                        </button>
+                    </div>
+                </div>
+
+                <!-- CARD 4: COBRO EJECUTIVO Y DAÑOS -->
+                <div class="bg-navy-950 rounded-xl overflow-hidden border border-gold-500/30 card-shadow flex flex-col hover:border-gold-500 transition-all group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80" 
+                             alt="Cobro Ejecutivo y Daños" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-transparent"></div>
+                        <span class="absolute top-3 left-3 bg-gold-500 text-navy-950 font-bold text-xs uppercase px-2.5 py-1 rounded shadow">
+                            Civil & Comercial
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif-title text-lg font-bold text-white mb-3 group-hover:text-gold-400 transition-colors">
+                                Cobro Ejecutivo & Accidentes
+                            </h3>
+                            <ul class="text-xs sm:text-sm text-gray-300 space-y-2 mb-6">
+                                <li class="flex items-start"><i class="fa-solid fa-circle-check text-gold-500 text-xs mt-1 mr-2"></i> Choques y siniestros viales</li>
+                                <li class="flex items-start"><i class="fa-solid fa-circle-check text-gold-500 text-xs mt-1 mr-2"></i> Cobro de pagarés y cheques</li>
+                                <li class="flex items-start"><i class="fa-solid fa-circle-check text-gold-500 text-xs mt-1 mr-2"></i> Alquileres y desalojos</li>
+                                <li class="flex items-start"><i class="fa-solid fa-circle-check text-gold-500 text-xs mt-1 mr-2"></i> Reclamos a compañías de seguro</li>
+                            </ul>
+                        </div>
+                        <button onclick="seleccionarYNavegar('Cobro / Daños')" class="w-full bg-navy-900 hover:bg-gold-500 text-gold-400 hover:text-navy-950 font-bold py-2.5 px-4 rounded-lg border border-gold-500/40 hover:border-gold-500 transition-all text-xs uppercase tracking-wider flex items-center justify-center">
+                            <i class="fa-solid fa-calendar-plus mr-2"></i> Reservar Turno Civil
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- APPOINTMENT BOOKING SECTION -->
+    <section id="turnos" class="py-20 bg-navy-950 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="bg-navy-900 rounded-2xl p-6 sm:p-10 border-2 border-gold-500/40 card-shadow relative overflow-hidden">
+                
+                <div class="absolute -top-12 -right-12 text-navy-800 text-9xl opacity-30 pointer-events-none">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                </div>
+
+                <div class="text-center mb-10 relative z-10">
+                    <span class="text-xs font-bold uppercase tracking-widest text-gold-400 bg-navy-950 px-3 py-1 rounded-full border border-gold-500/30">
+                        Agenda Online
+                    </span>
+                    <h2 class="font-serif-title text-2xl sm:text-4xl font-bold text-white mt-3">
+                        RESERVE SU CONSULTA PRESENCIAL
+                    </h2>
+                    <p class="text-gray-300 text-sm mt-2">
+                        Horario de Atención: <strong class="text-gold-400">Lunes a Viernes de 10:00 a 16:00 hs</strong>.
+                    </p>
+                </div>
+
+                <form id="bookingForm" class="space-y-6 relative z-10">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Nombre Completo -->
+                        <div>
+                            <label class="block text-xs font-bold text-gold-400 uppercase tracking-wider mb-2">
+                                <i class="fa-solid fa-user mr-1.5"></i> Nombre y Apellido *
+                            </label>
+                            <input type="text" id="nombre" required placeholder="Ej. Carlos Rodríguez" 
+                                   class="w-full bg-navy-950 border border-gray-700 rounded-lg p-3 text-white placeholder-gray-500 focus:outline-none focus:border-gold-500 transition-colors">
+                        </div>
+
+                        <!-- Teléfono WhatsApp -->
+                        <div>
+                            <label class="block text-xs font-bold text-gold-400 uppercase tracking-wider mb-2">
+                                <i class="fa-brands fa-whatsapp mr-1.5"></i> Teléfono (WhatsApp) *
+                            </label>
+                            <input type="tel" id="telefono" required placeholder="Ej. 11 3165 5290" 
+                                   class="w-full bg-navy-950 border border-gray-700 rounded-lg p-3 text-white placeholder-gray-500 focus:outline-none focus:border-gold-500 transition-colors">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        <!-- Área de Especialidad -->
+                        <div>
+                            <label class="block text-xs font-bold text-gold-400 uppercase tracking-wider mb-2">
+                                <i class="fa-solid fa-gavel mr-1.5"></i> Especialidad *
+                            </label>
+                            <select id="especialidad" required class="w-full bg-navy-950 border border-gray-700 rounded-lg p-3 text-white focus:outline-none focus:border-gold-500 transition-colors">
+                                <option value="Penal">Derecho Penal & Ciberdelitos</option>
+                                <option value="Laboral">Accidente Laboral & ART</option>
+                                <option value="Familia">Derecho de Familia & Alimentos</option>
+                                <option value="Cobro / Daños">Cobro Ejecutivo & Accidentes</option>
+                                <option value="Otra Consulta">Otra Consulta General</option>
+                            </select>
+                        </div>
+
+                        <!-- Selección de Día -->
+                        <div>
+                            <label class="block text-xs font-bold text-gold-400 uppercase tracking-wider mb-2">
+                                <i class="fa-solid fa-calendar-day mr-1.5"></i> Fecha Requerida *
+                            </label>
+                            <input type="date" id="fecha" required class="w-full bg-navy-950 border border-gray-700 rounded-lg p-3 text-white focus:outline-none focus:border-gold-500 transition-colors">
+                        </div>
+
+                        <!-- Selección de Hora (10:00 a 16:00 hs) -->
+                        <div>
+                            <label class="block text-xs font-bold text-gold-400 uppercase tracking-wider mb-2">
+                                <i class="fa-solid fa-clock mr-1.5"></i> Horario (10 a 16 hs) *
+                            </label>
+                            <select id="hora" required class="w-full bg-navy-950 border border-gray-700 rounded-lg p-3 text-white focus:outline-none focus:border-gold-500 transition-colors">
+                                <option value="10:00 HS">10:00 HS</option>
+                                <option value="11:00 HS">11:00 HS</option>
+                                <option value="12:00 HS">12:00 HS</option>
+                                <option value="13:00 HS">13:00 HS</option>
+                                <option value="14:00 HS">14:00 HS</option>
+                                <option value="15:00 HS">15:00 HS</option>
+                                <option value="16:00 HS">16:00 HS</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Mensaje / Detalle del caso -->
+                    <div>
+                        <label class="block text-xs font-bold text-gold-400 uppercase tracking-wider mb-2">
+                            <i class="fa-solid fa-file-lines mr-1.5"></i> Breve descripción del asunto legal
+                        </label>
+                        <textarea id="mensaje" rows="3" placeholder="Escriba aquí los detalles principales de su consulta para que podamos preparar su caso..." 
+                                  class="w-full bg-navy-950 border border-gray-700 rounded-lg p-3 text-white placeholder-gray-500 focus:outline-none focus:border-gold-500 transition-colors"></textarea>
+                    </div>
+
+                    <!-- Botón de Confirmación -->
+                    <button type="submit" class="w-full bg-gold-500 hover:bg-gold-400 text-navy-950 font-extrabold py-4 px-6 rounded-lg shadow-xl hover:shadow-gold-500/30 transition-all text-base tracking-wider uppercase flex items-center justify-center">
+                        <i class="fa-brands fa-whatsapp text-xl mr-2"></i> Confirmar Reserva por WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-navy-950 text-gray-400 pt-16 pb-12 border-t border-gold-500/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+                
+                <!-- Columna 1: Firma -->
+                <div>
+                    <h3 class="font-serif-title text-xl font-bold text-gold-500 mb-3">
+                        VÍCTOR RATARI & ASOCIADOS
+                    </h3>
+                    <p class="text-xs leading-relaxed text-gray-400 mb-4">
+                        Estudio jurídico dedicado a la defensa integral de los derechos de nuestros clientes. Compromiso, estrategia y confidencialidad garantizada.
+                    </p>
+                </div>
+
+                <!-- Columna 2: Contacto Directo -->
+                <div>
+                    <h4 class="font-serif-title text-sm font-bold text-white uppercase tracking-wider mb-4 border-b border-gold-500/20 pb-2">
+                        Contacto y Ubicación
+                    </h4>
+                    <ul class="space-y-3 text-xs sm:text-sm">
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-location-dot text-gold-500 text-base w-5"></i>
+                            <span>Bocuzzi 1222, Florencio Varela</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-phone text-gold-500 text-base w-5"></i>
+                            <span>11 3798-5710 / 11 3165-5290</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-envelope text-gold-500 text-base w-5"></i>
+                            <span>ratariestudioj@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Horarios de Atención -->
+                <div>
+                    <h4 class="font-serif-title text-sm font-bold text-white uppercase tracking-wider mb-4 border-b border-gold-500/20 pb-2">
+                        Horarios de Consulta
+                    </h4>
+                    <p class="text-xs text-gray-300 mb-2">
+                        <strong class="text-gold-400">Atención presencial con turno previo:</strong>
+                    </p>
+                    <p class="text-xs text-gray-400">Lunes a Viernes: 10:00 hs - 16:00 hs</p>
+                    <p class="text-xs text-gray-400 mt-1">Urgencias Penales: Atención permanente vía WhatsApp.</p>
+                </div>
+
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-xs text-gray-500">
+                <p>&copy; 2026 Estudio Jurídico Víctor Ratari & Asociados. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Establecer fecha mínima hoy para la reserva
+        document.addEventListener('DOMContentLoaded', () => {
+            const fechaInput = document.getElementById('fecha');
+            const today = new Date().toISOString().split('T')[0];
+            fechaInput.min = today;
+            fechaInput.value = today;
+        });
+
+        // Función para seleccionar la especialidad desde la tarjeta y desplazarse suavemente
+        function seleccionarYNavegar(especialidad) {
+            const select = document.getElementById('especialidad');
+            select.value = especialidad;
+
+            const turnosSection = document.getElementById('turnos');
+            turnosSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Manejo del formulario para enviar directo a WhatsApp
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nombre = document.getElementById('nombre').value;
+            const telefono = document.getElementById('telefono').value;
+            const especialidad = document.getElementById('especialidad').value;
+            const fecha = document.getElementById('fecha').value;
+            const hora = document.getElementById('hora').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            // Teléfono receptor de WhatsApp
+            const numeroEstudio = "5491137985710"; 
+
+            const textoWhatsApp = `*RESERVA DE TURNO - ESTUDIO JURÍDICO*%0A` +
+                `----------------------------------------%0A` +
+                `👤 *Cliente:* ${nombre}%0A` +
+                `📞 *Teléfono:* ${telefono}%0A` +
+                `⚖️️ *Especialidad:* ${especialidad}%0A` +
+                `📅 *Día solicitado:* ${fecha}%0A` +
+                `⏰ *Horario:* ${hora}%0A` +
+                `📝 *Detalle:* ${mensaje || 'Sin detalle adicional'}`;
+
+            window.open(`https://api.whatsapp.com/send?phone=${numeroEstudio}&text=${textoWhatsApp}`, '_blank');
+        });
+    </script>
+</body>
+</html>
